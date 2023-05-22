@@ -160,7 +160,7 @@ GET /transactions/?walletId=646b481e76e82b271c4a36a1&skip=0&limit=10
 
 - Node.js
 - Express.js
-- MongoDB (database)
+- MongoDB Atlas ( A cloud mongoDb database service )
 - JavaScript
 
 ## Setup Instructions
