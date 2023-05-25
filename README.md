@@ -31,11 +31,11 @@ This API provides functionality for a wallet system, allowing users to set up wa
 }
 ```
 - **Response**:
-  - `id`: The ID of the created wallet.
+  - `_id`: The ID of the created wallet.
   - `balance`: The current balance of the wallet.
-  - `transactionId`: The ID of the transaction.
+  - `transactions`: All transaction details.
   - `name`: The name of the wallet.
-  - `date`: The date the wallet was created.
+  - `createdAt`: The date the wallet was created ( Date).
 ```
   {
     "_id": "646923f2d67b3a6ddae5c5aa",
@@ -69,11 +69,11 @@ This API provides functionality for a wallet system, allowing users to set up wa
 ```
 - **Response**:
   - `balance`: The updated balance of the wallet after the transaction.
-  - `transactionId`: The ID of the transaction.
+  - `_id`: The ID of the transaction.
 
 ```
 {
-    "_id": "646923f2d67b3a6ddae5c5aa",
+    "walletId": "646923f2d67b3a6ddae5c5aa",
     "name": "nikkku",
     "balance": 154,
     "transactions": [
@@ -145,7 +145,7 @@ GET /transactions/?walletId=646b481e76e82b271c4a36a1&skip=0&limit=10
   - `_id`: The ID of the wallet.
   - `balance`: The current balance of the wallet.
   - `name`: The name of the wallet.
-  - `date`: The date the wallet was created.
+  - `createdAt`: The date the wallet was created (Date).
 ```
 {
     "_id": "646b481e76e82b271c4a36a1",
